@@ -50,4 +50,11 @@ public class LoginController {
         }
     }   
 
+    @FXML
+    private void signUpOnAction(Event event){
+        if(event.getSource().equals(signUp)){
+            loadStage("signUp.fxml", event);
+        }
+    }
+
 }

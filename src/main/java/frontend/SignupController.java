@@ -27,21 +27,6 @@ public class SignUpController {
     @FXML
     private Button signUp;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @FXML
     private void loadStage(String url, Event event){
         try {
@@ -59,6 +44,6 @@ public class SignUpController {
 
     @FXML
     public void backOnAction(@SuppressWarnings("exports") ActionEvent event) throws IOException{
-        loadStage("admin.fxml", event);
+        loadStage("login.fxml", event);
     }
 }

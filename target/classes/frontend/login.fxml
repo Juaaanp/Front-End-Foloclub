@@ -38,7 +38,7 @@
                   <Image url="@images/user-icon-vector-removebg-preview.png" />
                </image>
             </ImageView>
-            <Hyperlink fx:id="signUp" layoutX="188.0" layoutY="420.0" text="Sign up now" textFill="#0598ff" underline="true" />
+            <Hyperlink fx:id="signUp" layoutX="188.0" layoutY="420.0" onAction="#signUpOnAction" text="Sign up now" textFill="#0598ff" underline="true" />
             <Label layoutX="99.0" layoutY="423.0" text="not a member?" textFill="#009dff" />
          </children>
       </AnchorPane>
