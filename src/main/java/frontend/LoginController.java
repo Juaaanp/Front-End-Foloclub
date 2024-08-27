@@ -1,7 +1,5 @@
 package frontend;
 
-import java.lang.classfile.components.ClassPrinter.Node;
-
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -50,6 +48,6 @@ public class LoginController {
         } catch (Exception e) {
             new Exception("Error al cambiar de escena");
         }
-    }    
+    }   
 
 }

@@ -7,30 +7,29 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0599ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0599ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.SignupController">
    <children>
-      <TextField layoutX="405.0" layoutY="175.0" prefHeight="27.0" prefWidth="156.0" promptText="Enter your email" style="-fx-background-color: #0599ff; -fx-border-color: white; -fx-border-width: 0px0px2px0px;">
+      <TextField fx:id="email" layoutX="405.0" layoutY="175.0" prefHeight="27.0" prefWidth="156.0" promptText="Enter your email" style="-fx-background-color: #0599ff; -fx-border-color: white; -fx-border-width: 0px0px2px0px;">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </TextField>
-      <TextField layoutX="100.0" layoutY="268.0" prefHeight="27.0" prefWidth="156.0" promptText="Enter your name" style="-fx-background-color: #0599ff; -fx-border-color: white; -fx-border-width: 0px0px2px0px;">
+      <TextField fx:id="name" layoutX="100.0" layoutY="268.0" prefHeight="27.0" prefWidth="156.0" promptText="Enter your name" style="-fx-background-color: #0599ff; -fx-border-color: white; -fx-border-width: 0px0px2px0px;">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </TextField>
-      <TextField layoutX="100.0" layoutY="175.0" prefHeight="27.0" prefWidth="156.0" promptText="Enter an id" style="-fx-border-color: white; -fx-background-color: #0599ff; -fx-border-width: 0px0px2px0px;">
+      <TextField fx:id="id" layoutX="100.0" layoutY="175.0" prefHeight="27.0" prefWidth="156.0" promptText="Enter an id" style="-fx-border-color: white; -fx-background-color: #0599ff; -fx-border-width: 0px0px2px0px;">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </TextField>
-      <TextField layoutX="405.0" layoutY="268.0" prefHeight="27.0" prefWidth="156.0" promptText="Enter your role" style="-fx-background-color: #0599ff; -fx-border-color: white; -fx-border-width: 0px0px2px0px;">
+      <TextField fx:id="role" layoutX="405.0" layoutY="268.0" prefHeight="27.0" prefWidth="156.0" promptText="Enter your role" style="-fx-background-color: #0599ff; -fx-border-color: white; -fx-border-width: 0px0px2px0px;">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </TextField>
-      <Button layoutX="237.0" layoutY="341.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #07347c;" text="Sign up" textFill="WHITE">
+      <Button fx:id="signUp" layoutX="237.0" layoutY="341.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #07347c;" text="Sign up" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -67,7 +66,7 @@
                   <Image url="@images/227-2271313_user-icon-white-head-icon-hd-png-download-removebg-preview.png" />
                </image>
             </ImageView>
-            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #0599ff;" text="Back" textFill="WHITE">
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #0599ff;" text="Back" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

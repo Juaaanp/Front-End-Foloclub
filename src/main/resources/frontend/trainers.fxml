@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
@@ -14,9 +15,9 @@
    <children>
       <AnchorPane layoutY="306.0" prefHeight="95.0" prefWidth="600.0" style="-fx-background-color: #0599ff; -fx-border-color: #07347c; -fx-border-width: 4px0px0px0px;">
          <children>
-            <Label layoutX="222.0" layoutY="11.0" prefWidth="173.0" text="Trainers" textFill="WHITE">
+            <Label layoutX="214.0" layoutY="11.0" prefHeight="73.0" prefWidth="207.0" text="Trainers" textFill="WHITE">
                <font>
-                  <Font name="Best School" size="50.0" />
+                  <Font name="System Bold" size="50.0" />
                </font>
             </Label>
          </children>
@@ -32,23 +33,41 @@
           <TableColumn prefWidth="122.0" text="Specialization" />
             <TableColumn prefWidth="98.0" text="Email" />
         </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </TableView>
-      <ComboBox fx:id="trainingSessionsList" layoutX="402.0" layoutY="148.0" prefWidth="150.0" promptText="Training sessions list" style="-fx-border-color: #06488a; -fx-border-width: 0px0px4px0px;" />
+      <ComboBox fx:id="trainingSessionsList" layoutX="402.0" layoutY="148.0" prefWidth="150.0" promptText="Training sessions list" style="-fx-border-color: #06488a; -fx-border-width: 0px0px4px0px;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
       <Button fx:id="add" layoutX="404.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #0599ff; -fx-border-color: #07347c; -fx-border-width: 0px0px4px0px;" text="Add trainer" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
-         </font></Button>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <Button fx:id="update" layoutX="405.0" layoutY="226.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #0599ff; -fx-border-color: #07347c; -fx-border-width: 0px0px4px0px;" text="Update trainer" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
-         </font></Button>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <Button fx:id="delete" layoutX="406.0" layoutY="263.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #0599ff; -fx-border-color: #07347c; -fx-border-width: 0px0px4px0px;" text="Delete trainer" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
-         </font></Button>
-      <Button fx:id="back" layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: #0599ff; -fx-border-color: #07347c; -fx-border-width: 0px0px4px0px;" text="Back" textFill="WHITE">
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="back" layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: #0599ff; -fx-border-color: #07347c; -fx-border-width: 0px0px4px0px;" text="Back" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
-         </font></Button>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
    </children>
 </AnchorPane>
