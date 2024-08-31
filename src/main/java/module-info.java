@@ -4,6 +4,8 @@ module frontend {
     requires javafx.base;
     requires javafx.graphics;
     requires org.json;
+    requires com.fasterxml.jackson.databind;
+    requires com.fasterxml.jackson.core;
 
     opens frontend to javafx.fxml;
     exports frontend;

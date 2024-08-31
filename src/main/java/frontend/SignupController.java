@@ -13,7 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 
-public class SignUpController {
+public class SignupController {
     @FXML
     private TextField id;
     @FXML

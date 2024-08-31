@@ -12,6 +12,7 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.List;
 import java.util.Scanner;
 
 import org.json.JSONObject;
@@ -49,7 +50,15 @@ public class App extends Application {
                     response.append(scanner.nextLine());
                 }
                 scanner.close();
-                JSONObject jsonObject = new JSONObject(response);
+                List<User> users = JsonReader.convertJsonToUsers(response.toString());
+
+ for (User user : users) {
+                System.out.println("Name: " + user.getName());
+                System.out.println("Email: " + user.getEmail());
+                System.out.println("Role: " + user.getRole());
+                System.out.println("---");
+            }
+                // JSONObject jsonObject = new JSONObject(response);
                 System.out.println(response.toString());
             
             }
