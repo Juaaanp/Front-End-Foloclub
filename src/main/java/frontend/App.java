@@ -12,6 +12,10 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.Scanner;
+
+import org.json.JSONObject;
+
 
 /**
  * JavaFX App
@@ -39,7 +43,15 @@ public class App extends Application {
                 throw new RuntimeException("HttpResponseCode: " + responseCode);
             }
             else{
-                System.out.println("Response code: " + responseCode);
+                StringBuilder response = new StringBuilder();
+                Scanner scanner = new Scanner(url.openStream());
+                while (scanner.hasNext()) {
+                    response.append(scanner.nextLine());
+                }
+                scanner.close();
+                JSONObject jsonObject = new JSONObject(response);
+                System.out.println(response.toString());
+            
             }
 
         } catch (URISyntaxException | MalformedURLException e) {
