@@ -14,33 +14,33 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.TrainingSessionController">
    <children>
-      <TableView fx:id="table" layoutX="20.0" layoutY="135.0" prefHeight="200.0" prefWidth="377.0">
+      <TableView fx:id="trainingSessionstbl" layoutX="20.0" layoutY="135.0" prefHeight="200.0" prefWidth="377.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Date" />
-          <TableColumn prefWidth="75.0" text="Sport" />
-            <TableColumn prefWidth="75.0" text="Trainer" />
-            <TableColumn prefWidth="75.0" text="Duration" />
-            <TableColumn prefWidth="75.0" text="State" />
+          <TableColumn fx:id="dateColumn" prefWidth="75.0" text="Date" />
+          <TableColumn fx:id="sportColumn" prefWidth="75.0" text="Sport" />
+            <TableColumn fx:id="trainerColumn" prefWidth="75.0" text="Trainer" />
+            <TableColumn fx:id="durationColumn" prefWidth="75.0" text="Duration" />
+            <TableColumn fx:id="stateColumn" prefWidth="75.0" text="State" />
         </columns>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </TableView>
-      <Button fx:id="add" layoutX="456.0" layoutY="186.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="101.0" style="-fx-background-color: #0599ff; -fx-border-color: #07347c; -fx-border-width: 0px0px4px0px;" text="Add session" textFill="WHITE">
+      <Button fx:id="add" layoutX="456.0" layoutY="186.0" mnemonicParsing="false" onAction="#addTrainingSession" prefHeight="29.0" prefWidth="101.0" style="-fx-background-color: #0599ff; -fx-border-color: #07347c; -fx-border-width: 0px0px4px0px;" text="Add session" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="update" layoutX="456.0" layoutY="235.0" mnemonicParsing="false" style="-fx-background-color: #0599ff; -fx-border-color: #07347c; -fx-border-width: 0px0px4px0px;" text="Update session" textFill="WHITE">
+      <Button fx:id="update" layoutX="456.0" layoutY="235.0" mnemonicParsing="false" onAction="#updateTrainingSession" style="-fx-background-color: #0599ff; -fx-border-color: #07347c; -fx-border-width: 0px0px4px0px;" text="Update session" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="delete" layoutX="456.0" layoutY="285.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="101.0" style="-fx-background-color: #0599ff; -fx-border-color: #07347c; -fx-border-width: 0px0px4px0px;" text="Delete session" textFill="WHITE">
+      <Button fx:id="delete" layoutX="456.0" layoutY="285.0" mnemonicParsing="false" onAction="#deleteTrainingSession" prefHeight="29.0" prefWidth="101.0" style="-fx-background-color: #0599ff; -fx-border-color: #07347c; -fx-border-width: 0px0px4px0px;" text="Delete session" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

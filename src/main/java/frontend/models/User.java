@@ -1,8 +1,9 @@
-package frontend;
+package frontend.models;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 import com.fasterxml.jackson.annotation.JsonAlias;
 
-public class User {
+public class User{
     @JsonProperty("_id")
     @JsonAlias("id")
     public String id;

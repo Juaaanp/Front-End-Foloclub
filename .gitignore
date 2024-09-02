@@ -3,7 +3,7 @@ HELP.md
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-
+lab/dao/
 ### IntelliJ IDEA ###
 .idea
 *.iws

@@ -25,7 +25,7 @@
                   <Image url="@images/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector-removebg-preview.png" />
                </image>
             </ImageView>
-            <Button fx:id="logIn" layoutX="134.0" layoutY="314.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="83.0" style="-fx-background-color: #0598ff; -fx-border-color: #07347c; -fx-border-width: 0px0px3px0px;" text="Login" textFill="WHITE">
+            <Button fx:id="logIn" layoutX="134.0" layoutY="314.0" onAction="#eventOnAction" mnemonicParsing="false" prefHeight="43.0" prefWidth="83.0" style="-fx-background-color: #0598ff; -fx-border-color: #07347c; -fx-border-width: 0px0px3px0px;" text="Login" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
